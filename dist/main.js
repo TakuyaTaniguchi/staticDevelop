@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"hello\", function() { return hello; });\n// export文を使ってhello関数を定義する。\nfunction hello() {\n  alert(\"helloメソッドが実行された。\");\n}\n\n//# sourceURL=webpack:///./src/sub.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"hello\", function() { return hello; });\n// export文を使ってhello関数を定義する。\nfunction hello() {\n  alert(\"helloメソッドが実行されたhhhhhhh。\");\n}\n\n//# sourceURL=webpack:///./src/sub.js?");
 
 /***/ })
 

@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "webpack --mode development --watch",
+    "dev": "webpack-dev-server --mode development --watch",
     "build": "webpack",
     "test": "webpack-dev-server"
   },
