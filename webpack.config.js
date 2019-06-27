@@ -24,6 +24,26 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.scss/,
+                use: [
+                    "style-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            url: false,
+                            sourceMap: enabledSourceMap,
+                            importLoaders: 2
+                        }
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: enabledSourceMap
+                        }
+                    }
+                ]
+            },
+            {
                 //ローダの処理対象ファイル
                 test: /\.js$/,
                 //ローダの処理対象から外すディレクトリ
