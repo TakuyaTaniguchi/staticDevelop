@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "webpack-dev-server --mode development --watch",
-    "build": "webpack",
+    "build": "yarn lint:js & yarn lint:scss && webpack",
     "lint": "yarn lint:js & yarn lint:scss",
     "lint:js": "eslint --fix \"src/*.js\"",
     "lint:scss": "stylelint './src/*.scss'"

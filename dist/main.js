@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(true);\n// Module\nexports.push([module.i, \"body {\\n  background-color: red; }\\n\\np {\\n  font-size: 100px; }\\n\", \"\",{\"version\":3,\"sources\":[\"/Users/oikaze/work/sandbox/webpack/src/style.scss\",\"/Users/oikaze/work/sandbox/webpack/src/sub.scss\"],\"names\":[],\"mappings\":\"AAAA;EACE,qBAAqB,EAAA;;ACDvB;EACE,gBAAgB,EAAA\",\"file\":\"style.scss\",\"sourcesContent\":[\"body{\\n  background-color: red;\\n}\\n\\n@import './sub.scss';\\n\",\"p{\\n  font-size: 100px;\\n}\\n\"]}]);\n\n\n//# sourceURL=webpack:///./src/style.scss?./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(true);\n// Module\nexports.push([module.i, \"body {\\n  background-color: blue; }\\n\\np {\\n  font-size: 100px; }\\n\", \"\",{\"version\":3,\"sources\":[\"/Users/oikaze/work/sandbox/webpack/src/style.scss\",\"/Users/oikaze/work/sandbox/webpack/src/sub.scss\"],\"names\":[],\"mappings\":\"AAAA;EACE,sBAAsB,EAAA;;ACDxB;EACE,gBAAgB,EAAA\",\"file\":\"style.scss\",\"sourcesContent\":[\"body{\\n  background-color: blue;\\n}\\n\\n@import './sub.scss';\\n\",\"p{\\n  font-size: 100px;\\n}\\n\"]}]);\n\n\n//# sourceURL=webpack:///./src/style.scss?./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/sass-loader/lib/loader.js??ref--4-2");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sub */ \"./src/sub.js\");\n // import 文を使って sub.js ファイルを読み込む。\n\n // sub.jsに定義されたJavaScriptを実行する。\n\nObject(_sub__WEBPACK_IMPORTED_MODULE_1__[\"hello\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sub */ \"./src/sub.js\");\n // import 文を使って sub.js ファイルを読み込む。\n\n // sub.jsに定義されたJavaScriptを実行する。\n\nObject(_sub__WEBPACK_IMPORTED_MODULE_1__[\"hello\"])();\n\nvar hoge = function hoge() {\n  console.log('ge');\n};\n\nhoge();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -162,7 +162,7 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"hello\", function() { return hello; });\n// export文を使ってhello関数を定義する。\nfunction hello() {\n  console.log('ge');\n}\n\n//# sourceURL=webpack:///./src/sub.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"hello\", function() { return hello; });\n// export文を使ってhello関数を定義する。\nfunction hello() {\n  console.log('aaaaaa');\n}\n\n//# sourceURL=webpack:///./src/sub.js?");
 
 /***/ })
 
