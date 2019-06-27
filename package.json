@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "dev": "webpack-dev-server --mode development --watch",
+    "dev": "webpack-dev-server --mode development --watch yarn lint:js",
     "build": "webpack",
-    "lintjs": "eslint --fix \"src/*.js\"",
-    "lint": "stylelint \"src/*.scss\""
+    "lint": "yarn lint:js & yarn lint:scss",
+    "lint:js": "eslint --fix \"src/*.js\"",
+    "lint:scss": "stylelint './src/*.scss'"
   },
   "dependencies": {
     "webpack": "^4.35.0",
