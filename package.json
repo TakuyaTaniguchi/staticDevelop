@@ -5,7 +5,7 @@
     "lint": "yarn lint:js & yarn lint:scss",
     "lint:js": "eslint --fix \"src/*.js\"",
     "lint:scss": "stylelint './src/*.scss'",
-    "precommit": "lint-staged hoge"
+    "precommit": "lint-staged"
   },
   "husky": {
     "hooks": {
@@ -16,10 +16,9 @@
     "*.js": [
       "eslint --fix",
       "git add"
-    ]
-  },
-  "hoge": {
-    "*.{css,less,scss,sss}": [
+    ],
+    "*.scss": [
+      "prettier --write",
       "stylelint --fix",
       "git add"
     ]
