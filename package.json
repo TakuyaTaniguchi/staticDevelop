@@ -4,7 +4,14 @@
     "build": "yarn lint:js & yarn lint:scss && webpack",
     "lint": "yarn lint:js & yarn lint:scss",
     "lint:js": "eslint --fix \"src/*.js\"",
-    "lint:scss": "stylelint './src/*.scss'"
+    "lint:scss": "stylelint './src/*.scss'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "webpack": "^4.35.0",
@@ -20,6 +27,8 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
     "node-sass": "^4.9.3",
     "prettier-stylelint": "^0.4.2",
     "sass-loader": "^7.1.0",
