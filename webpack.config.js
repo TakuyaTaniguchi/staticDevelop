@@ -1,9 +1,17 @@
 const path = require('path');
-console.log('はあああああああああああああああああああああ',__dirname);
 const MODE = "development";
 const enabledSourceMap = MODE === "development";
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const STYLELINT = ['./src/style.scss'];
+
 module.exports = {
     mode: 'development',
+    plugins: [
+        new StyleLintPlugin({
+            files: STYLELINT,
+            syntax: 'scss'
+        }),
+    ],
     //entry
     entry: `./src/index.js`,
     //ファイルの出力
