@@ -1,5 +1,7 @@
 const path = require('path');
 console.log('はあああああああああああああああああああああ',__dirname);
+const MODE = "development";
+const enabledSourceMap = MODE === "development";
 module.exports = {
     mode: 'development',
     //entry
@@ -18,7 +20,6 @@ module.exports = {
         host: '0.0.0.0',
         disableHostCheck: true,
         useLocalIp: true,
-        https: true
      },
     //ローダの設定
     module: {
