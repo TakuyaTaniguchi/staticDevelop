@@ -19,8 +19,8 @@
     ]
   },
   "hoge": {
-    "*.js": [
-      "eslint --fix",
+    "*.{css,less,scss,sss}": [
+      "stylelint --fix",
       "git add"
     ]
   },
