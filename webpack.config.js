@@ -6,15 +6,7 @@ const STYLELINT = ['./src/**.scss'];
 
 module.exports = {
     mode: 'development',
-    plugins: [
-        new StyleLintPlugin({
-            files: STYLELINT,
-            syntax: 'scss'
-        }),
-    ],
-    //entry
     entry: `./src/index.js`,
-    //ファイルの出力
     output: {
         path: `${__dirname}/dist`,
         filename: "main.js"
@@ -53,13 +45,10 @@ module.exports = {
                 ]
             },
             {
-                //ローダの処理対象ファイル
                 test: /\.js$/,
-                //ローダの処理対象から外すディレクトリ
                 exclude: /node_module/,
                 use: [
                     {
-                        //利用するローダ
                         loader: 'babel-loader',
                         options: {
                             presets: [['@babel/preset-env', { modules: false }]]
@@ -68,9 +57,6 @@ module.exports = {
                 ]
             },
             {
-                // enforce: 'pre'を指定することによって
-                // enforce: 'pre'がついていないローダーより早く処理が実行される
-                // 今回はbabel-loaderで変換する前にコードを検証したいため、指定が必要
                 enforce: 'pre',
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -78,4 +64,10 @@ module.exports = {
             },
         ]
     },
+    plugins: [
+        new StyleLintPlugin({
+            files: STYLELINT,
+            syntax: 'scss'
+        }),
+    ],
 };
