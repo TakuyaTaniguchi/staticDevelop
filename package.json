@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "dev": "webpack-dev-server --mode development --watch && stylelint \"src/*.scss\"",
+    "dev": "webpack-dev-server --mode development --watch",
     "build": "webpack",
     "test": "webpack-dev-server",
-    "lint": "stylelint \"src/*.scss\""
+    "lint": "stylelint \"src/*.scss\"",
+    "lint:js": "eslint .js src/sub.js' --format codeframe"
   },
   "dependencies": {
     "webpack": "^4.35.0",
