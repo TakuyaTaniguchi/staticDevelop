@@ -3,8 +3,6 @@ const MODE = 'development';
 const enabledSourceMap = MODE === 'development';
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const STYLELINT = ['./src/**.scss'];
-// const EsLintPlugin = require('webpack-eslint-plugin');
-// const ESLINT = ['./src/*.js'];
 
 module.exports = {
   mode: 'development',
