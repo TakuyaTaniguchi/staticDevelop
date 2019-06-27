@@ -1,5 +1,5 @@
 const path = require('path');
-const dist = process.env.dist;
+console.log('はあああああああああああああああああああああ',__dirname);
 module.exports = {
     mode: 'development',
     //entry
@@ -17,7 +17,8 @@ module.exports = {
         hot: true,
         host: '0.0.0.0',
         disableHostCheck: true,
-        useLocalIp: true
+        useLocalIp: true,
+        https: true
      },
     //ローダの設定
     module: {
