@@ -2,9 +2,8 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --watch",
     "build": "webpack",
-    "test": "webpack-dev-server",
-    "lint": "stylelint \"src/*.scss\"",
-    "lint:js": "eslint .js src/sub.js' --format codeframe"
+    "lintjs": "eslint --fix \"src/*.js\"",
+    "lint": "stylelint \"src/*.scss\""
   },
   "dependencies": {
     "webpack": "^4.35.0",
@@ -17,7 +16,9 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-loader": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.0",
     "node-sass": "^4.9.3",
     "prettier-stylelint": "^0.4.2",
     "sass-loader": "^7.1.0",

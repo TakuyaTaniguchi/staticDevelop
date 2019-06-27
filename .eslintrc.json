@@ -2,7 +2,10 @@
     "env": {
         "browser": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
@@ -12,6 +15,13 @@
         "no-extra-semi": "warn",
         "no-undef": "warn",
         "quotes": ["warn", "single"],
-        "space-before-blocks": ["warn", { "functions": "always" }]
+        "space-before-blocks": ["warn", { "functions": "always" }],
+        "prettier/prettier": [
+            "error",
+            {
+              "singleQuote": true,
+              "trailingComma": "es5"
+            }
+          ]
     }
 }
