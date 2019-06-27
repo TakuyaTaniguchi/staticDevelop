@@ -2,7 +2,7 @@ const path = require('path');
 const MODE = "development";
 const enabledSourceMap = MODE === "development";
 const StyleLintPlugin = require('stylelint-webpack-plugin');
-const STYLELINT = ['./src/style.scss'];
+const STYLELINT = ['./src/**.scss'];
 
 module.exports = {
     mode: 'development',
