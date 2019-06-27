@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "webpack-dev-server --mode development --watch yarn lint:js",
+    "dev": "webpack-dev-server --mode development --watch",
     "build": "webpack",
     "lint": "yarn lint:js & yarn lint:scss",
     "lint:js": "eslint --fix \"src/*.js\"",
