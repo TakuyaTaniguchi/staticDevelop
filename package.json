@@ -40,6 +40,7 @@
     "husky": "^2.4.1",
     "lint-staged": "^8.2.1",
     "node-sass": "^4.9.3",
+    "prettier-eslint": "^9.0.0",
     "prettier-stylelint": "^0.4.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
