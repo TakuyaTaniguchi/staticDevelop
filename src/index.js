@@ -5,8 +5,10 @@ import { hello } from './sub';
 // sub.jsに定義されたJavaScriptを実行する。
 hello();
 
-const hoge = () => {
-  console.log('ge');
-};
+function func() {
+  let x = 1;
+  let y = 2;
+  return { x, y };
+}
 
-hoge();
+console.log(func());
