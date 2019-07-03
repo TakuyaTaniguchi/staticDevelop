@@ -6,10 +6,10 @@ const STYLELINT = ['./src/**.scss'];
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: `${__dirname}/dist`,
-    filename: 'main.js',
+    filename: 'main.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -19,7 +19,7 @@ module.exports = {
     hot: true,
     host: '0.0.0.0',
     disableHostCheck: true,
-    useLocalIp: true,
+    useLocalIp: true
   },
   //ローダの設定
   module: {
@@ -33,16 +33,16 @@ module.exports = {
             options: {
               url: false,
               sourceMap: enabledSourceMap,
-              importLoaders: 2,
-            },
+              importLoaders: 2
+            }
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: enabledSourceMap,
-            },
-          },
-        ],
+              sourceMap: enabledSourceMap
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,
@@ -51,23 +51,23 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: [['@babel/preset-env', { modules: false }]],
-            },
-          },
-        ],
+              presets: [['@babel/preset-env', { modules: false }]]
+            }
+          }
+        ]
       },
       {
         enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader',
-      },
-    ],
+        loader: 'eslint-loader'
+      }
+    ]
   },
   plugins: [
     new StyleLintPlugin({
       files: STYLELINT,
-      syntax: 'scss',
-    }),
-  ],
+      syntax: 'scss'
+    })
+  ]
 };
