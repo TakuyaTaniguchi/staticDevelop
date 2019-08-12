@@ -3,6 +3,7 @@ const MODE = 'development';
 const enabledSourceMap = MODE === 'development';
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const STYLELINT = ['./src/**.scss'];
+const globImporter = require('node-sass-glob-importer');
 
 module.exports = {
   mode: 'development',
@@ -39,7 +40,8 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: enabledSourceMap
+              sourceMap: enabledSourceMap,
+              importer: globImporter()
             }
           }
         ]
