@@ -7,7 +7,7 @@ const globImporter = require('node-sass-glob-importer');
 
 module.exports = {
   mode: 'development',
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: ['@babel/polyfill', './src/js/index.js'],
   output: {
     path: `${__dirname}/dist`,
     filename: 'main.js'
