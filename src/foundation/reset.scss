@@ -182,3 +182,11 @@ input,
 select {
   vertical-align: middle;
 }
+
+/* boxsize */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
