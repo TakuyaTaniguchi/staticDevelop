@@ -1,4 +1,0 @@
-diff a/src/sub.js b/src/sub.js	(rejected hunks)
-@@ -4 +4 @@ export function hello() {
--   }
-+}

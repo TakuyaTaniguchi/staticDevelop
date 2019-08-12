@@ -1,6 +1,5 @@
-body {
-  position: relative;
-}
-
-@import "./sub.scss";
-@import "./base/**.scss";
+@import "./foundation/*.scss";
+@import "./layout/*.scss";
+@import "./object/component/*.scss";
+@import "./object/project/*.scss";
+@import "./object/utility/*.scss";
