@@ -5,6 +5,7 @@
 /vendor
 /img
 /dist
+/dist/*
 .env
 .phpunit.result.cache
 Homestead.json
