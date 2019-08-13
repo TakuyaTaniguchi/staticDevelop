@@ -26,6 +26,29 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.pug$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { name: '[name].html' }
+          },
+          'extract-loader',
+          {
+            loader: 'html-loader',
+            options: {
+              attrs: ['img:src', ':data-src']
+            }
+          },
+          {
+            loader: 'pug-html-loader',
+            options: {
+              pretty: true
+            }
+          }
+        ]
+      },
+      {
         test: /\.scss/,
         use: [
           'style-loader',
@@ -63,7 +86,8 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'eslint-loader'
-      }
+      },
+      { test: /\.html$/, exclude: /node_modules/, loader: 'html-loader' }
     ]
   },
   plugins: [
